@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "**Journey through Scraping**"
-date:       2019-10-09 21:25:09 +0000
+date:       2019-10-09 17:25:09 -0400
 permalink:  journey_through_scraping
 ---
 
@@ -36,7 +36,7 @@ second_page.css("div.sidebar_content ul.sectionlist li")[8].children
 ```
 Then I was able to iterate to get the value of each href attribute.
 
-After I got those couple scrape methods working, I'm elated!  I pack up for the day and tell myself I'll work on my last scrape method that weekend.  Or so I thought.
+After I got those couple scrape methods working, I was elated!  I packed up for the day and told myself I'll work on my last scrape method that weekend.  Or so I thought.
 
 I moved onto the next level of scraping (remember - the page with the majority of the data I want).  I started coding and jumped into pry.   And that is when Ms. Kubler-Ross really showed up (uninvited).
 
