@@ -38,7 +38,7 @@ Then I was able to iterate to get the value of each href attribute.
 
 After I got those couple scrape methods working, I was elated!  I packed up for the day and told myself I'll work on my last scrape method that weekend.  Or so I thought.
 
-I moved onto the next level of scraping (remember - the page with the majority of the data I want).  I started coding and jumped into pry.   And that is when Ms. Kubler-Ross really showed up (uninvited).
+I moved onto the next level of scraping (remember - the page with the majority of the data I wanted).  I started coding and jumped into pry.   And that was when Ms. Kubler-Ross really showed up (uninvited).
 
 
 ![](https://github.com/kseggelke918/co_14ers_cli/blob/master/403error.jpg?raw=true)
