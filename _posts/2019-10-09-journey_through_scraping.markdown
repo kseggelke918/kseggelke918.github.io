@@ -50,6 +50,6 @@ I didn't know what this meant but I did know that I sure didn't like the sound o
 
 Enter stage 3 - bargaining.  What do I need to do to make sure this all works?  To make sure that I don't need to start over?  I had my 1:1 and apparently this has happened before.  Phew!  There's a playbook for this!  I couldn't change the way the website is reacting (despite my best efforts) but I could change what my gem could do.  I couldn't go as deep as I wanted to, but I could still meet the requirements for the project.  Skip step 4 and onto step 5 - acceptance.  I had a plan and I didn't need to start from scratch.  I tweeked my code and my object attributes to accept the data I could get and added an attribute for the url I could scrape for - I'll be providing this to the user instead of all the attributes I was hoping to get.
 
-It's been a wild ride, but I think the biggest take-away here is that there is always a way to do it, there's always a work around or a plan B (or C or D...or even Z).  When life throws you 403 Forbidden errors, you code some lemonade or whatever.
+It's been a wild ride, but I think the biggest take-away here is that there is always a way to do it, there's always a work around or a plan B (or C or D...or even Z).  When life throws you 403 Forbidden errors, you code some lemonade. 
 
 
