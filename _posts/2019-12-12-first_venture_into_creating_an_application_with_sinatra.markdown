@@ -10,7 +10,7 @@ In what seemed like no time time at all, we came to a close on our second Flatir
 
 Some of the more interesting pieces of code and/or thought processes I found, encountered and wrote:
 
-### Editing a User's Information
+## Editing a User's Information
 
 I wanted to allow a user to edit their own login information much like you can on a real online banking website.  Let's say a user changed their name or needed to change a password, I wanted them to be able to easily update that information (even if a bank may not allow that in the real world).  
 
@@ -75,7 +75,7 @@ if params[:current_password] != "" && params[:new_password] != "" && params[:con
 end 
 ```
 
-### Validating Username Uniqueness 
+## Validating Username Uniqueness 
 
 This seemed a lot more daunting than it need to.  After doing some research, I found that ActiveRecord macro `validates_uniqueness_of` so in my User model I could simply do:
 
@@ -95,7 +95,7 @@ else
 end 
 ```
 
-### System Generated Unique Account Numbers
+## System Generated Unique Account Numbers
 
 At a real bank, the customer doesn't get to choose their account numbers.  I wanted to include that logic in my application.  When I created accounts, I did so without account numbers.
 
