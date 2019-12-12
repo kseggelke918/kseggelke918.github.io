@@ -1,16 +1,16 @@
 ---
 layout: post
 title:      "First Venture Into Creating an Application With Sinatra"
-date:       2019-12-12 22:04:15 +0000
+date:       2019-12-12 17:04:16 -0500
 permalink:  first_venture_into_creating_an_application_with_sinatra
 ---
 
 
 In what seemed like no time time at all, we came to a close on our second Flatiron section and began the second portfolio project - an MVC Sinatra Application.   I decided to do a basic Online Banking application where the user can sign up, open accounts, close accounts and make edits to their own profiles.  
 
-Some of the more interesting pieces of code and/or thought processes I encountered:
+Some of the more interesting pieces of code and/or thought processes I found, encountered and wrote:
 
-*** Editing a User's Information**
+### Editing a User's Information
 
 I wanted to allow a user to edit their own login information much like you can on a real online banking website.  Let's say a user changed their name or needed to change a password, I wanted them to be able to easily update that information (even if a bank may not allow that in the real world).  
 
@@ -32,7 +32,7 @@ I then created the edit form making sure to make the action route specific to th
 ```
 <form action="/users/<%=@user.id%>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
-	</form>
+</form>
 ```
 
 I also knew I wanted to be able to display the current information (for the username and customer name).   So I came up with a simple format for both:
@@ -54,7 +54,7 @@ The password change would be a bit different, because I knew I wanted to be able
     <h5><label for="confirm_password">Confirm Password: </label><input type="password" name="confirm_password"> </h5>
 ```
 
-So after adding a submit button, I moved onto creating the route in the users controller.  There were a lot of conditions that would need to be met in order for everything to work correctly and securely.  Like making sure that we only made changes if the fields had information entered into them:
+So after adding a submit button, I moved onto creating the route in the users controller.  There were a lot of conditions that had to be met in order for everything to work correctly and securely.  Like making sure that we only made changes if the fields had information entered into them:
 
 ```
 @user.username = params[:new_username] if params[:new_username] != ""
@@ -75,7 +75,7 @@ if params[:current_password] != "" && params[:new_password] != "" && params[:con
 end 
 ```
 
-* **Validating Username Uniqueness **
+### Validating Username Uniqueness 
 
 This seemed a lot more daunting than it need to.  After doing some research, I found that ActiveRecord macro `validates_uniqueness_of` so in my User model I could simply do:
 
@@ -95,7 +95,7 @@ else
 end 
 ```
 
-* **System Generated Unique Account Numbers**
+### System Generated Unique Account Numbers
 
 At a real bank, the customer doesn't get to choose their account numbers.  I wanted to include that logic in my application.  When I created accounts, I did so without account numbers.
 
