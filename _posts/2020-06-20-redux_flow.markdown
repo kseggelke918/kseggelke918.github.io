@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Redux Flow"
-date:       2020-06-20 22:29:22 +0000
+date:       2020-06-20 18:29:23 -0400
 permalink:  redux_flow
 ---
 
@@ -111,4 +111,10 @@ export default (state = null, action) => {
 ```
 
 Reducers often have a default or initial state set in the argument.  In the above example, we set the user to the user the action was called on and we return null when clearing the user.
+
+The Redux flow goes from 
+1. Calling dispatch in the Action
+2. The Redux store calls the reducer function you gave it
+3. The root reducer (like combineReducers()) combines the output of all the reduceers into a single state
+4. The Redux store saves the state returned in step 3
 
