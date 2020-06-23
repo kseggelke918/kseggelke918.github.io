@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Setting Up Redux Store"
-date:       2020-06-23 19:56:07 +0000
+date:       2020-06-23 15:56:08 -0400
 permalink:  setting_up_redux_store
 ---
 
@@ -98,5 +98,32 @@ ReactDOM.render(
 );
 ```
 
-The store is now created and can be viewed in the Redux dev tools.  From here, create actions and components for the application.
+The store is now created and can be viewed in the Redux dev tools.  From here, create actions and components for the application.  
+
+STEP 9: USE CONNECT
+
+Import { connect } from 'react-redux' to give the component access to the store
+
+```
+import { connect } from 'react-redux'
+```
+
+And use connect in the default statement
+
+```
+export default connect(mapStateToProps, { updateSignupForm })(Signup)
+```
+
+The mapStateToProps function provides the component access to the store as props while the second argument in connect is mapDispatchToProps which gives us access to dispatch (update) the store from the component.
+
+A mapStateToProps function must be written, while the mapDispatchToProps can be written as shorthand as seen above.
+
+```
+const mapStateToProps = ({ currentUser }) => {
+    return {
+      currentUser,
+      loggedIn: !!currentUser
+    }
+  }
+```
 
