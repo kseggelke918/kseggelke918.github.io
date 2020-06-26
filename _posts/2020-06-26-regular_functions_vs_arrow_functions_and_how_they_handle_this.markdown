@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Regular Functions vs Arrow Functions and How They Handle `this`"
-date:       2020-06-26 20:27:00 +0000
+date:       2020-06-26 16:27:01 -0400
 permalink:  regular_functions_vs_arrow_functions_and_how_they_handle_this
 ---
 
